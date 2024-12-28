@@ -1,16 +1,16 @@
 import React from 'react'
 import Link from 'next/link'
-import { LayoutGrid, Search, SidebarIcon, SquarePen, Zap } from 'lucide-react'
+import { Circles4Square, LayoutSideContent, Magnifier, PencilToSquare, Thunderbolt } from '@gravity-ui/icons'
 
 const Sidebar = () => {
     return (
         <aside className='bg-neutral-900 h-screen sticky p-5 flex flex-col justify-between'>
             <div className='space-y-7'>
                 <div className='flex items-center justify-between text-neutral-300'>
-                    <SidebarIcon size={20} />
+                    <LayoutSideContent height={22} width={22} />
                     <div className='flex gap-5'>
-                        <Search size={20} />
-                        <SquarePen size={20} />
+                        <Magnifier height={22} width={22} />
+                        <PencilToSquare height={22} width={22} />
                     </div>
                 </div>
                 <div>
@@ -22,16 +22,16 @@ const Sidebar = () => {
                         </div>
                         ChatGPT
                     </Link>
-                    <span className='flex items-center gap-2 mt-2'>
+                    <Link href={'/gpts'} className='flex items-center gap-2 mt-2'>
                         <div className='p-1 text-neutral-300'>
-                            <LayoutGrid size={17} />
+                            <Circles4Square height={18} width={18} />
                         </div>
                         Explorar GPT
-                    </span>
+                    </Link>
                 </div>
             </div>
             <div className='flex items-center gap-4'>
-                <Zap size={15} />
+                <Thunderbolt />
                 <div>
                     <p>Mejorar el plan</p>
                     <span className='text-xs text-neutral-400 line-clamp-1'>Mayor acceso a los mejores...</span>

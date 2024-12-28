@@ -1,11 +1,22 @@
 import type { Metadata } from "next";
-import { Inter } from 'next/font/google'
-import "./globals.css";
+import localFont from 'next/font/local'
 import Sidebar from "@/components/Sidebar";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import "./globals.css";
 
-const font = Inter({ subsets: ['latin'] })
+const font = localFont({
+  src: [
+    {
+      path: './fonts/Soehne-Bold.woff2',
+      weight: '700',
+    },
+    {
+      path: './fonts/Soehne-Regular.woff2',
+      weight: '400',
+    },
+  ],
+})
 
 export const metadata: Metadata = {
   title: "ChatGPT",
