@@ -1,4 +1,4 @@
-import { AudioLines, Database, Eye, FileText, Image, Lightbulb, Package, Paperclip, PencilLine } from "lucide-react";
+import { AudioLines, Database, Eye, FileText, Globe, Image, Lightbulb, Package, Paperclip, PencilLine } from "lucide-react";
 
 const options: { icon: JSX.Element; text: string }[] = [
   {
@@ -39,9 +39,10 @@ export default function Home() {
             className="bg-transparent w-full outline-none placeholder:text-neutral-400"
           />
           <div className="flex items-end justify-between">
-            <div className="flex gap-4">
-              <Paperclip size={20} />
-              <Package size={20} />
+            <div className="flex gap-3">
+              <Paperclip size={22} />
+              <Package size={22} />
+              <Globe size={22} />
             </div>
             <button className="rounded-full bg-white text-black p-1 aspect-square">
               <AudioLines size={20} />
