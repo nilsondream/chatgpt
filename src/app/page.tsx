@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <div className="bg-neutral-800/75 p-5 flex justify-center items-center">
       <div className="w-3/5 text-center space-y-7">
-        <h1 className="text-3xl tracking-tight">¿Con qué puedo ayudarte?</h1>
+        <h1 className="text-3xl">¿Con qué puedo ayudarte?</h1>
         <div className="bg-neutral-700/50 rounded-3xl p-4 space-y-4">
           <input
             type="text"
@@ -40,7 +40,7 @@ export default function Home() {
             className="bg-transparent w-full outline-none placeholder:text-neutral-400"
           />
           <div className="flex items-end justify-between">
-            <div className="flex gap-3">
+            <div className="flex gap-4">
               <Paperclip height={22} width={22} />
               <Box height={22} width={22} />
               <Globe height={22} width={22} />
